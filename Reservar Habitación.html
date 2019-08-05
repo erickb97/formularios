@@ -2,9 +2,107 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Reservar Habitacion en Hotel</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-$END$
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="index.html">HOME</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="hotel_reserve_box">
+            <h3> Hotel Reservation Form </h3><br>
+            <form>
+                <div class="form-group">
+                    <label>Room/Suite Type</label>
+                    <select class="form-control" id="suit" name="suit">
+                        <option value="0" selected>Seleccione </option>
+                        <option value="1"> Standard </option>
+                        <option value="2"> Deluxe </option>
+                        <option value="3"> Superior Deluxe </option>
+                        <option value="4"> Premier Deluxe  </option>
+                        <option value="5"> Executive Suite </option>
+                        <option value="6"> Junior Suite </option>
+                        <option value="7"> Honeymoon Suite </option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Numero de Habitaciones/suite</label>
+                    <select class="form-control" id="numero_habitaciones" name="numero_habitaciones">
+                        <option value="0"> 0 </option>
+                        <option value="1"> 1 </option>
+                        <option value="2"> 2 </option>
+                        <option value="3"> 3 </option>
+                        <option value="4"> 4 </option>
+                        <option value="5"> 5 </option>
+                        <option value="6"> 6 </option>
+                        <option value="7"> 7 </option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Numero de personas</label>
+                    <select class="form-control" id="numero_personas" name="numero_personas">
+                        <option value="0"> 0 </option>
+                        <option value="1"> 1 </option>
+                        <option value="2"> 2 </option>
+                        <option value="3"> 3 </option>
+                        <option value="4"> 4 </option>
+                        <option value="5"> 5 </option>
+                        <option value="6"> 6 </option>
+                        <option value="7"> 7 </option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Total de Niños</label>
+                    <select class="form-control" id="total_niños" name="total_niños" >
+                        <option value="0"> 0 </option>
+                        <option value="1"> 1 </option>
+                        <option value="2"> 2 </option>
+                        <option value="3"> 3 </option>
+                        <option value="4"> 4 </option>
+                        <option value="5"> 5 </option>
+                        <option value="6"> 6 </option>
+                        <option value="7"> 7 </option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Restaurant facilities?</label>
+                    <select class="form-control" id="res_facilities" >
+                        <option value="0" selected>Quiere reservar el restaurante </option>
+                        <option value="2"> Si </option>
+                        <option value="0"> No </option>
+                    </select>
+                    <br>
+
+                    <div class="form-group">
+                        <label class="form-group" type="text">Fecha de Ingreso</label>
+                        <input type="date" id="fecha_ingreso" name="fecha_ingreso" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-group" type="text">Fecha de salida</label>
+                        <input type="date" id="fecha_ingreso" name="fecha_ingreso" required>
+                    </div> <br>
+                </div><br>
+               <button type="submit" class="btn btn-success btn-lg">Reservar</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6889.348858864227!2d-89.90266984912455!3d14.281403670668226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f627d866d06aab7%3A0x948f805acfb751de!2sUniversidad+Mariano+Galvez!5e0!3m2!1ses!2sgt!4v1564966111618!5m2!1ses!2sgt" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
 </body>
 </html>

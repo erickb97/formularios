@@ -2,9 +2,94 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Solicitud de Empleo</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-$END$
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="index.html">HOME</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+        </div>
+    </nav>
+    <div class="container">
+        <form action="" method="get">
+        <div class="panel panel-primary">
+            <div class="panel-heading">DATOS PERSONALES</div>
+
+                <div class="panel-body">
+
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo:</label>
+                        <input type="text" class="form-control" id="nombre"  name="nombre">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="direccion">Direccion:</label>
+                        <input type="password" class="form-control" placeholder="Departamento, Municipio, Barrio o Aldea" id="direccion" name="direccion">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dpi">DPI:</label>
+                        <input type="text" class="form-control " id="dpi" name="dpi" maxlength="13">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nit">NIT:</label>
+                        <input type="text" class="form-control " id="nit" name="nit" maxlength="13">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" class="form-control " id="email" name="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tel">Número de teléfono:</label>
+                        <input type="tel" class="form-control" value="+502" placeholder="+50212121212" id="tel" name="tel" maxlength="12">
+                    </div>
+
+                </div>
+
+
+
+            <div class="panel panel-success">
+                <div class="panel-heading">DATOS DE TRABAJO</div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label for="puesto">Seleccione el puesto al que desea aplicar:</label>
+                        <select class="form-control" id="puesto" name="puesto">
+                            <option>Digitador</option>
+                            <option>Plomero</option>
+                            <option>Ingeniero</option>
+                            <option>Guardia</option>
+                            <option>Conserje</option>
+                            <option>Gerente</option>
+                        </select>
+
+                        <div class="form-group">
+                            <label for="anios">Años de Experiencia:</label>
+                            <input type="text" class="form-control col-3" id="anios" name="anios" maxlength="2">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pret_salario">Pretencion salarial:</label>
+                        <input type="text" class="form-control" id="pret_salario" name="pret_salario">
+                    </div>
+
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success btn-lg" >Aplicar</button>
+        </form>
+    </div>
 </body>
 </html>

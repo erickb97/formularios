@@ -2,9 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Vehiculos</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="index.html">HOME</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="panel panel-primary">
+            <div class="panel-heading">INGRESA TUS DATOS</div>
+            <div class="panel-body">
+                <form action="" method="get">
+                    <div class="form-group">
+                        <label class="form-group" type="text">Ingrese su nombre:</label>
+                        <input id="nombre" name="nombre" class="form-control col-5" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-group" type="text">Ingrese su Apellido:</label>
+                        <input id="apellido" name="apellido" class="form-control col-5" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-group" type="text">Marca de Vehículo:</label>
+                        <input id="marca" name="marca" class="form-control col-5" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-group" type="text">Linea Vehículo:</label>
+                        <input id="linea" name="linea" class="form-control col-5" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-group" type="text">Modelo</label>
+                        <input type="tex" id="modelo" name="modelo" class="form-control col-2" maxlength="4" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-group" type="text">Correo</label>
+                        <input type="email" id="email" name="email" class="form-control col-4" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-success btn-lg">Cotizar</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
 
 </body>
 </html>
